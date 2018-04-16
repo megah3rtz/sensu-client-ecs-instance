@@ -1,6 +1,6 @@
 FROM debian:latest
 
-RUN apt-get update && apt-get install wget gnupg apt-transport-https -y \
+RUN apt-get update && apt-get install wget curl gnupg apt-transport-https -y \
 && wget -q https://sensu.global.ssl.fastly.net/apt/pubkey.gpg -O- | apt-key add - \
 && echo "deb     https://sensu.global.ssl.fastly.net/apt stretch main" | tee /etc/apt/sources.list.d/sensu.list \
 && apt-get update && apt-get install sensu ruby ruby-dev make gcc build-essential -y \
