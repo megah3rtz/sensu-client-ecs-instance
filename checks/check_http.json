@@ -1,9 +1,0 @@
-{
-  "checks": {
-    "http": {
-      "command": "/opt/sensu/embedded/bin/check-http.rb -t5 -p SERVICE_PORT -u http://SERVICE_NAME",
-      "standalone": true,
-      "interval": 60
-    }
-  }
-}
