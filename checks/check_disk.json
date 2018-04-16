@@ -1,6 +1,6 @@
 {
   "checks": {
-    "http": {
+    "disk": {
       "command": "/opt/sensu/embedded/bin/check-disk.rb -w 90 -W 90 -c 95 -K 95",
       "standalone": true,
       "interval": 60,
