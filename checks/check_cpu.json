@@ -1,6 +1,6 @@
 {
   "checks": {
-    "http": {
+    "cpu": {
       "command": "/opt/sensu/embedded/bin/check-cpu.rb -w 90 -c 95",
       "standalone": true,
       "interval": 60,
